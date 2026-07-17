@@ -3,7 +3,7 @@ const app = express();
 
 app.get('/', (req, res) => {
   res.json({
-    message: 'Hello from ECS Fargate !',
+    message: 'Hello from ECS Fargate version 2 !',
     containerId: process.env.HOSTNAME || 'unknown',
     timestamp: new Date().toISOString(),
     version: 'v1.1.0'
